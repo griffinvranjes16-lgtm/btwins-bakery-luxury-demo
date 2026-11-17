@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Btwins Panadería Nicaraguense — Artisan Nicaraguan Bakery · Little Havana, Miami</title>
+<meta name="description" content="Btwins Panadería Nicaraguense — authentic Nicaraguan pan dulce, semitas, picos, tres leches and custom cakes in Little Havana, Miami. 1550 SW 1st St #15. Call (305) 649-4130.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600&family=Jost:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#14532d; --green-deep:#0c3a1e; --green-soft:#e9f2ea;
+  --gold:#c9a227; --gold-soft:#f3e9c8; --cream:#faf6ee; --ivory:#fffdf7;
+  --red:#c0392b; --ink:#1c1a16; --muted:#6f6a5e; --line:#e5dcc8;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:'Jost',system-ui,-apple-system,'Segoe UI',sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
+h1,h2,h3,.serif{font-family:'Playfair Display',Georgia,serif;line-height:1.15;margin:0}
+a{color:var(--green)}
+.demo-banner{background:var(--gold);color:#241d04;text-align:center;font-size:12px;letter-spacing:.18em;font-weight:600;padding:8px 14px;text-transform:uppercase}
+header.site{background:var(--ivory);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
+.header-inner{max-width:1180px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.logo-lockup{display:flex;align-items:center;gap:14px;text-decoration:none}
+.logo-plaque{background:linear-gradient(160deg,#1e6b3c,#14532d 60%,#0c3a1e);border-radius:10px;padding:10px 18px 8px;text-align:center;box-shadow:0 4px 14px rgba(12,58,30,.25);border:1px solid #d4af37}
+.logo-plaque .script{font-family:'Great Vibes',cursive;font-size:34px;line-height:.9;color:#fff;display:block}
+.logo-plaque .bakery{font-family:'Playfair Display',serif;font-weight:800;font-size:15px;letter-spacing:.42em;color:#ff6b5e;display:block;margin-top:2px;text-indent:.42em}
+.logo-text .name{font-family:'Playfair Display',serif;font-weight:700;font-size:21px;color:var(--ink);line-height:1.1}
+.logo-text .sub{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}
+nav.mainnav{margin-left:auto;display:flex;gap:4px;flex-wrap:wrap}
+nav.mainnav button{background:none;border:0;font-family:'Jost',sans-serif;font-size:14px;letter-spacing:.08em;text-transform:uppercase;font-weight:500;color:var(--ink);padding:10px 12px;cursor:pointer;border-bottom:2px solid transparent}
+nav.mainnav button:hover{color:var(--green)}
+nav.mainnav button.active{color:var(--green);border-bottom-color:var(--gold)}
+.btn{display:inline-block;background:var(--green);color:#fff;text-decoration:none;font-weight:600;letter-spacing:.06em;padding:13px 24px;border-radius:999px;border:0;cursor:pointer;font-family:'Jost',sans-serif;font-size:15px}
+.btn:hover{background:var(--green-deep)}
+.btn.gold{background:var(--gold);color:#241d04}
+.btn.gold:hover{background:#b8931f}
+.btn.ghost{background:transparent;color:var(--green);border:1.5px solid var(--green)}
+.btn.ghost:hover{background:var(--green-soft)}
+main{max-width:1180px;margin:0 auto;padding:0 20px 60px}
+.page{display:none}
+.page.active{display:block;animation:fade .35s ease}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.hero{margin:26px 0 0;border-radius:22px;overflow:hidden;background:var(--green-deep);color:#fff;position:relative}
+.hero-img{width:100%;height:440px;object-fit:cover;display:block;opacity:.92}
+.hero-overlay{position:absolute;inset:auto 0 0 0;padding:34px 36px;background:linear-gradient(transparent,rgba(6,32,17,.88))}
+.hero-overlay h1{font-size:clamp(34px,5vw,58px);color:#fff;font-weight:700}
+.hero-overlay h1 em{color:var(--gold-soft);font-style:italic}
+.hero-overlay p{max-width:640px;color:#f2ead6;font-size:18px;margin:12px 0 0}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
+.hero-cta .btn.ghost{color:#fff;border-color:#fff}
+.hero-cta .btn.ghost:hover{background:rgba(255,255,255,.12)}
+.trustbar{display:flex;gap:18px;flex-wrap:wrap;margin:22px 0 0}
+.trustbar .chip{background:var(--ivory);border:1px solid var(--line);border-radius:999px;padding:9px 16px;font-size:14px}
+.trustbar .chip b{color:var(--green)}
+.section{margin-top:54px}
+.section-kicker{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);font-weight:600}
+.section h2{font-size:clamp(28px,3.6vw,40px);margin:8px 0 10px}
+.section .lede{font-size:18px;color:var(--muted);max-width:720px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:26px}
+.card{background:var(--ivory);border:1px solid var(--line);border-radius:18px;padding:24px}
+.card h3{font-size:21px;margin-bottom:6px}
+.card p{margin:6px 0;color:var(--muted)}
+.card .tag{display:inline-block;background:var(--green-soft);color:var(--green);font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;border-radius:999px;padding:4px 10px;margin-bottom:10px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:26px}
+.gallery figure{margin:0;border-radius:18px;overflow:hidden;background:var(--ivory);border:1px solid var(--line)}
+.gallery img{width:100%;height:260px;object-fit:cover;display:block}
+.gallery figcaption{padding:12px 16px;font-size:14px;color:var(--muted)}
+.gallery figcaption b{color:var(--ink);font-family:'Playfair Display',serif;font-size:16px}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:24px 0 6px}
+.toolbar input[type=search]{flex:1;min-width:220px;padding:13px 18px;border:1px solid var(--line);border-radius:999px;font-family:'Jost',sans-serif;font-size:16px;background:#fff}
+.chipbtn{border:1.5px solid var(--green);background:#fff;color:var(--green);border-radius:999px;padding:9px 16px;font-family:'Jost',sans-serif;font-size:14px;font-weight:500;cursor:pointer}
+.chipbtn.active{background:var(--green);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px;margin-top:18px}
+.item{background:var(--ivory);border:1px solid var(--line);border-radius:16px;padding:20px;display:flex;flex-direction:column;gap:6px}
+.item h3{font-size:20px}
+.item p{margin:0;color:var(--muted);font-size:15px;flex:1}
+.item .cat{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:600}
+.item .add{margin-top:10px;align-self:flex-start;background:var(--green);color:#fff;border:0;border-radius:999px;padding:9px 16px;font-family:'Jost',sans-serif;font-size:14px;font-weight:600;cursor:pointer}
+.item .add.added{background:var(--gold);color:#241d04}
+.boxbar{position:sticky;bottom:16px;background:var(--green-deep);color:#fff;border-radius:16px;padding:16px 20px;display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-top:26px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.boxbar .count{font-family:'Playfair Display',serif;font-size:22px}
+.boxbar .items{flex:1;font-size:14px;color:#d8e8d8;min-width:200px}
+.form-card{background:var(--ivory);border:1px solid var(--line);border-radius:20px;padding:30px;margin-top:26px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:700px){.form-grid{grid-template-columns:1fr}}
+label.f{display:block;font-size:13px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;color:var(--muted);margin-bottom:6px}
+input,select,textarea{width:100%;padding:13px 15px;border:1px solid var(--line);border-radius:12px;font-family:'Jost',sans-serif;font-size:16px;background:#fff;color:var(--ink)}
+.summary{background:var(--green-soft);border:1px solid #cfe0d2;border-radius:16px;padding:20px 22px;margin-top:20px;display:none}
+.summary h3{margin-bottom:8px}
+.carousel{position:relative;background:var(--green-deep);color:#fff;border-radius:22px;padding:44px 40px;margin-top:26px;text-align:center}
+.carousel blockquote{font-family:'Playfair Display',serif;font-size:clamp(20px,2.6vw,28px);font-style:italic;line-height:1.45;margin:0 auto;max-width:820px}
+.carousel .who{margin-top:18px;color:var(--gold-soft);font-size:15px;letter-spacing:.06em}
+.carousel .nav{display:flex;gap:10px;justify-content:center;margin-top:24px}
+.carousel .nav button{background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:9px 18px;cursor:pointer;font-family:'Jost',sans-serif;font-size:14px}
+.carousel .nav button:hover{background:rgba(255,255,255,.28)}
+.dots{display:flex;gap:8px;justify-content:center;margin-top:16px}
+.dots span{width:9px;height:9px;border-radius:50%;background:rgba(255,255,255,.35);cursor:pointer}
+.dots span.on{background:var(--gold)}
+.bars{margin-top:26px}
+.bar-row{display:grid;grid-template-columns:64px 1fr 52px;gap:12px;align-items:center;margin:9px 0;font-size:14px}
+.bar-track{background:#eee5cf;border-radius:999px;height:10px;overflow:hidden}
+.bar-fill{background:linear-gradient(90deg,var(--gold),#e3c766);height:100%;border-radius:999px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:26px}
+@media(max-width:820px){.split{grid-template-columns:1fr}}
+table.hours{width:100%;border-collapse:collapse;background:var(--ivory);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+table.hours td{padding:13px 18px;border-bottom:1px solid var(--line)}
+table.hours tr:last-child td{border-bottom:0}
+table.hours tr.today td{background:var(--gold-soft);font-weight:600}
+table.hours tr.today td:first-child::after{content:" · Today";color:var(--green);font-size:13px}
+.faq details{background:var(--ivory);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-top:12px}
+.faq summary{cursor:pointer;font-family:'Playfair Display',serif;font-size:19px;font-weight:600}
+.faq p{margin:10px 0 0;color:var(--muted)}
+.note{background:#fff8e1;border:1px solid #ffe08a;border-radius:12px;padding:12px 16px;font-size:14px;margin-top:18px}
+footer.site{border-top:1px solid var(--line);margin-top:60px;padding:34px 20px;text-align:center;color:var(--muted);font-size:14px}
+footer.site .logo-plaque{display:inline-block;margin-bottom:12px}
+.small{font-size:13px;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="demo-banner">Demo Preview — a concept website for Btwins Panadería Nicaraguense, not yet their live site</div>
+<header class="site">
+  <div class="header-inner">
+    <a class="logo-lockup" href="#" onclick="go('home');return false" aria-label="Btwins Bakery home">
+      <span class="logo-plaque"><span class="script">B-Twins</span><span class="bakery">BAKERY</span></span>
+      <span class="logo-text"><span class="name">Btwins Panadería</span><br><span class="sub">Nicaraguense · Little Havana · Miami</span></span>
+    </a>
+    <nav class="mainnav" aria-label="Main">
+      <button data-page="home" class="active" onclick="go('home')">Home</button>
+      <button data-page="bakery" onclick="go('bakery')">Bakery</button>
+      <button data-page="cakes" onclick="go('cakes')">Cakes</button>
+      <button data-page="reviews" onclick="go('reviews')">Reviews</button>
+      <button data-page="visit" onclick="go('visit')">Visit</button>
+    </nav>
+    <a class="btn" href="tel:+13056494130">Call (305) 649-4130</a>
+  </div>
+</header>
+
+<main>
+<!-- ============ HOME ============ -->
+<section class="page active" id="page-home">
+  <div class="hero">
+    <img class="hero-img" src="images/goodies.jpg" alt="Fresh baked goods at Btwins Bakery" onerror="this.style.display='none'">
+    <div class="hero-overlay">
+      <h1>Pan dulce, <em>hecho con amor.</em></h1>
+      <p>An authentic Nicaraguan bakery on the edge of Little Havana — semitas warm from the oven, picos, tres leches and custom cakes, baked fresh through the day.</p>
+      <div class="hero-cta">
+        <button class="btn gold" onclick="go('bakery')">Explore the Bakery</button>
+        <button class="btn ghost" onclick="go('cakes')">Order a Custom Cake</button>
+      </div>
+    </div>
+  </div>
+  <div class="trustbar">
+    <span class="chip"><b>4.5 ★</b> · ~1,000 Google reviews</span>
+    <span class="chip"><b>Little Havana</b> · 1550 SW 1st St #15, Miami</span>
+    <span class="chip"><b>Cash only</b> · take-out</span>
+    <span class="chip"><b>Open today</b> · Mon–Sat, 7 AM–9 PM</span>
+  </div>
+
+  <div class="section">
+    <div class="section-kicker">From the case</div>
+    <h2>What Miami comes back for</h2>
+    <p class="lede">Reviewers call it a hidden gem and a little treasure — Central American sweets you will not find anywhere else in the city, with fresh batches coming out all afternoon.</p>
+    <div class="cards">
+      <div class="card"><span class="tag">Most loved</span><h3>Semitas</h3><p>Like conchas, just smaller and a little crunchy. Warm from the oven in the afternoon — and they sell out fast.</p></div>
+      <div class="card"><span class="tag">Customer favorite</span><h3>Picos</h3><p>“Best Nicaraguan picos hands down,” say reviewers — worth the drive, and they freeze beautifully.</p></div>
+      <div class="card"><span class="tag">Signature cake</span><h3>Pineapple Honey Cake</h3><p>Rich, moist and bursting with tropical flavor. The cake regulars order again and again.</p></div>
+      <div class="card"><span class="tag">Sweet rolls</span><h3>Strawberry Sweet Rolls</h3><p>Soft, sweet and gone fast. Reviewers call them heavenly, straight from the case.</p></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-kicker">Fresh from the oven</div>
+    <h2>A look inside the bakery</h2>
+    <div class="gallery">
+      <figure><img src="images/goodies.jpg" alt="Assorted baked goods" onerror="this.closest('figure').style.display='none'"><figcaption><b>Goodies</b> — fresh from the case, photographed by a customer.</figcaption></figure>
+      <figure><img src="images/santa-cake.jpg" alt="Santa cake" onerror="this.closest('figure').style.display='none'"><figcaption><b>Santa Cake</b> — a seasonal favorite from the cake case.</figcaption></figure>
+      <figure><img src="images/baked-fresh.jpg" alt="Bakery interior" onerror="this.closest('figure').style.display='none'"><figcaption><b>Baked Fresh</b> — inside the shop on SW 1st St.</figcaption></figure>
+      <figure><img src="images/options.jpg" alt="Bakery display options" onerror="this.closest('figure').style.display='none'"><figcaption><b>The Display</b> — rows of pan dulce to choose from.</figcaption></figure>
+    </div>
+    <p class="small" style="margin-top:10px">Photos: customer photos from the bakery's public Yelp listing.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-kicker">Good to know</div>
+    <h2>Before you visit</h2>
+    <div class="cards">
+      <div class="card"><h3>Come for the semitas</h3><p>Fresh batches come out in the afternoon — reviewers say after 2 PM, warm around 4:30 PM. Call ahead, because they go fast.</p></div>
+      <div class="card"><h3>Bring cash</h3><p>The bakery is cash-only. Bring cash so you can load up without a second trip.</p></div>
+      <div class="card"><h3>Parking is tight</h3><p>Reviewers warn the lot is packed — be patient, it is worth it.</p></div>
+    </div>
+<!-- ============ BAKERY ============ -->
+<section class="page" id="page-bakery">
+  <div class="section">
+    <div class="section-kicker">The Bakery</div>
+    <h2>Pan dulce, cakes &amp; Nicaraguan specialties</h2>
+    <p class="lede">Everything below is a real item customers name in reviews — search it, filter it, and tap items to build your box. No prices are listed here; the bakery will confirm prices when you call. Cash only.</p>
+    <div class="toolbar">
+      <input type="search" id="q" placeholder="Search semitas, picos, tres leches…" oninput="renderItems()">
+      <button class="chipbtn active" data-f="all" onclick="setFilter('all',this)">All</button>
+      <button class="chipbtn" data-f="pan" onclick="setFilter('pan',this)">Pan Dulce</button>
+      <button class="chipbtn" data-f="cakes" onclick="setFilter('cakes',this)">Cakes &amp; Tres Leches</button>
+      <button class="chipbtn" data-f="nica" onclick="setFilter('nica',this)">Nicaraguan Specialties</button>
+      <button class="chipbtn" data-f="savory" onclick="setFilter('savory',this)">Savory &amp; Cheese</button>
+    </div>
+    <div class="grid" id="itemGrid"></div>
+    <div class="boxbar" id="boxbar">
+      <span class="count"><span id="boxCount">0</span> in your box</span>
+      <span class="items" id="boxItems">Tap “Add to box” on anything you want to take home.</span>
+      <a class="btn gold" href="tel:+13056494130">Call to Order Your Box</a>
+      <button class="btn ghost" style="color:#fff;border-color:#fff" onclick="clearBox()">Clear</button>
+    </div>
+    <div class="note"><b>Baker's tip:</b> reviewers say the freshest batches come out before 2 PM and warm semitas come out in the afternoon — call (305) 649-4130 to check what is in the case right now.</div>
+  </div>
+</section>
+
+<!-- ============ CAKES ============ -->
+<section class="page" id="page-cakes">
+  <div class="section">
+    <div class="section-kicker">Custom Cakes</div>
+    <h2>A cake made for your celebration</h2>
+    <p class="lede">Birthday cakes are a customer favorite here — pineapple honey cake, tres leches, torta leche and more. Tell us what you are dreaming of and the bakery will confirm availability and price by phone. This form sends nothing anywhere; it builds your request to read out when you call.</p>
+    <div class="form-card">
+      <div class="form-grid">
+        <div><label class="f" for="ck-name">Your name</label><input id="ck-name" type="text" placeholder="Your name" oninput="cakeSummary()"></div>
+        <div><label class="f" for="ck-phone">Phone</label><input id="ck-phone" type="tel" placeholder="(305) 555-0000" oninput="cakeSummary()"></div>
+        <div><label class="f" for="ck-size">Cake size</label>
+          <select id="ck-size" onchange="cakeSummary()">
+            <option>Personal — just for one</option>
+            <option selected>Small — a family gathering</option>
+            <option>Medium — a party table</option>
+            <option>Large — a big celebration</option>
+            <option>Sheet cake</option>
+          </select></div>
+        <div><label class="f" for="ck-flavor">Flavor</label>
+          <select id="ck-flavor" onchange="cakeSummary()">
+            <option selected>Tres leches</option>
+            <option>Pineapple honey</option>
+            <option>Torta leche</option>
+            <option>Chocolate</option>
+            <option>Vanilla</option>
+            <option>Strawberry</option>
+          </select></div>
+        <div><label class="f" for="ck-occ">Occasion</label>
+          <select id="ck-occ" onchange="cakeSummary()">
+            <option selected>Birthday</option>
+            <option>Quinceañera</option>
+            <option>Wedding</option>
+            <option>Baby shower</option>
+            <option>Graduation</option>
+            <option>Just because</option>
+          </select></div>
+        <div><label class="f" for="ck-date">Pickup date</label><input id="ck-date" type="date" onchange="cakeSummary()"></div>
+        <div style="grid-column:1/-1"><label class="f" for="ck-notes">Anything else? (writing, colors, filling)</label><textarea id="ck-notes" rows="3" placeholder="e.g. Happy birthday in gold, extra pineapple…" oninput="cakeSummary()"></textarea></div>
+      </div>
+      <div class="summary" id="cakeSummary"></div>
+      <div style="margin-top:20px;display:flex;gap:12px;flex-wrap:wrap">
+        <a class="btn" href="tel:+13056494130">Call (305) 649-4130 to Confirm</a>
+        <button class="btn ghost" onclick="cakeSummary()">Build My Request</button>
+      </div>
+      <p class="small" style="margin-top:14px">Order custom cakes in advance — one reviewer ordered two weeks ahead. Flavors and sizes are subject to availability; the bakery confirms everything by phone. Cash only.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REVIEWS ============ -->
+<section class="page" id="page-reviews">
+  <div class="section">
+    <div class="section-kicker">Reviews</div>
+    <h2>What Miami says about Btwins</h2>
+    <p class="lede">Real reviews from Google and Yelp, in customers' own words. <b>4.5 ★ · ~1,000 Google reviews</b> · Yelp 3.7 ★ · 19 reviews.</p>
+    <div class="carousel">
+      <blockquote id="quoteText"></blockquote>
+      <div class="who" id="quoteWho"></div>
+      <div class="nav">
+        <button onclick="prevReview()">← Previous</button>
+        <button onclick="nextReview()">Next →</button>
+      </div>
+      <div class="dots" id="quoteDots"></div>
+    </div>
+    <div class="split">
+      <div class="card">
+        <h3>Rating breakdown</h3>
+        <p>147 ratings on Restaurantji — most customers give five stars; the one-star reviews are mostly about card fees and cake-order mix-ups, not the bread.</p>
+        <div class="bars">
+          <div class="bar-row"><span>5 ★</span><div class="bar-track"><div class="bar-fill" style="width:63%"></div></div><span>63%</span></div>
+          <div class="bar-row"><span>4 ★</span><div class="bar-track"><div class="bar-fill" style="width:9%"></div></div><span>9%</span></div>
+          <div class="bar-row"><span>3 ★</span><div class="bar-track"><div class="bar-fill" style="width:2%"></div></div><span>2%</span></div>
+          <div class="bar-row"><span>2 ★</span><div class="bar-track"><div class="bar-fill" style="width:0%"></div></div><span>0%</span></div>
+          <div class="bar-row"><span>1 ★</span><div class="bar-track"><div class="bar-fill" style="width:26%"></div></div><span>26%</span></div>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Heard most often</h3>
+        <p>“Freshest Central American bakery in Miami” · “Best Nicaraguan picos hands down” · “A hidden gem in Little Havana” · “Everything is freshly made and most importantly delicious.”</p>
+        <p>Reviewers also agree on three tips: come before 2 PM for the freshest batches, call ahead for semitas, and bring cash.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VISIT ============ -->
+<section class="page" id="page-visit">
+  <div class="section">
+    <div class="section-kicker">Visit</div>
+    <h2>Come taste Little Havana</h2>
+    <p class="lede">A small bakery in a small plaza on the edge of Little Havana — steady traffic, a big glass case, and the smell of fresh bread from the door.</p>
+    <div class="split">
+      <div>
+        <table class="hours" id="hoursTable">
+          <tr data-day="1"><td>Monday</td><td>7:00 AM – 9:00 PM</td></tr>
+          <tr data-day="2"><td>Tuesday</td><td>7:00 AM – 9:00 PM</td></tr>
+          <tr data-day="3"><td>Wednesday</td><td>7:00 AM – 9:00 PM</td></tr>
+          <tr data-day="4"><td>Thursday</td><td>7:00 AM – 9:00 PM</td></tr>
+          <tr data-day="5"><td>Friday</td><td>7:00 AM – 9:00 PM</td></tr>
+          <tr data-day="6"><td>Saturday</td><td>7:00 AM – 9:00 PM</td></tr>
+          <tr data-day="0"><td>Sunday</td><td>Closed</td></tr>
+        </table>
+        <p class="small" style="margin-top:10px">Hours from the bakery's Yelp listing, updated October 2026. Some other listings show 6 AM – 10 PM — call (305) 649-4130 to confirm before you travel.</p>
+      </div>
+      <div class="card">
+        <h3>Find us</h3>
+        <p><b>Btwins Panadería Nicaraguense</b><br>1550 SW 1st St #15<br>Miami, FL 33135 · Little Havana</p>
+        <p><a href="tel:+13056494130">(305) 649-4130</a> — tap to call</p>
+        <p><a href="https://www.google.com/maps/search/?api=1&query=Btwins+Panaderia+Nicaraguense+1550+SW+1st+St+Miami+FL+33135" target="_blank" rel="noopener">Get directions on Google Maps →</a></p>
+        <p><a href="https://www.instagram.com/btwinsbakery/" target="_blank" rel="noopener">Instagram · @btwinsbakery</a><br>
+        <a href="https://www.facebook.com/121096907906037" target="_blank" rel="noopener">Facebook</a></p>
+        <p>Take-out · Cash only · No delivery</p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:14px">
+          <a class="btn" href="tel:+13056494130">Call Now</a>
+          <button class="btn ghost" onclick="go('bakery')">Browse the Bakery</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section faq">
+    <div class="section-kicker">Questions</div>
+    <h2>Before you ask</h2>
+    <details><summary>Do you take cards?</summary><p>No — the bakery is cash-only. Bring cash; several reviewers say the same, so come prepared.</p></details>
+    <details><summary>When do the semitas come out?</summary><p>Reviewers say fresh batches come out in the afternoon — after 2 PM, warm around 4:30 PM — and they sell out fast. Call ahead to check what is in the case.</p></details>
+    <details><summary>Can I order a custom cake?</summary><p>Yes — birthday cakes are a customer favorite. Order in advance by phone; one reviewer ordered two weeks ahead. Use the cake form on this site to build your request, then call to confirm.</p></details>
+    <details><summary>Do you deliver?</summary><p>No delivery — take-out and in-store pickup only.</p></details>
+    <details><summary>Is parking easy?</summary><p>Reviewers warn parking is packed, especially at peak hours between 5–7 PM — be patient, it is worth it.</p></details>
+    <details><summary>What should I try first?</summary><p>Reviewers point first-timers to the semitas, the picos, the pineapple honey cake and the strawberry sweet rolls.</p></details>
+  </div>
+</section>
+</main>
+
+<footer class="site">
+  <span class="logo-plaque"><span class="script">B-Twins</span><span class="bakery">BAKERY</span></span>
+  <p><b style="color:var(--ink)">Btwins Panadería Nicaraguense</b> · 1550 SW 1st St #15, Miami, FL 33135 · <a href="tel:+13056494130">(305) 649-4130</a></p>
+  <p>4.5 ★ · ~1,000 Google reviews · Little Havana, Miami · Cash only · Take-out</p>
+  <p class="small">Demo preview — this concept site is not live on the bakery's domain yet. Reviews shown are real customer reviews from Google and Yelp. Photos are customer photos from the bakery's public Yelp listing.</p>
+</footer>
+
+<script>
+var ITEMS=[
+{n:"Semitas",c:"pan",d:"Like conchas, just smaller and a little crunchy. Warm from the oven in the afternoon — and they sell out fast."},
+{n:"Long Sugar Donuts",c:"pan",d:"A house favorite — soft, sweet, and gone fast. Reviewers order them by the dozen."},
+{n:"Strawberry Sweet Rolls",c:"pan",d:"Soft, sweet rolls reviewers call heavenly, straight from the case."},
+{n:"Pan de Manjar",c:"pan",d:"A traditional sweet bread from the Nicaraguan case."},
+{n:"Donas",c:"pan",d:"Classic sweet donuts — reviewers say to get them before they are gone."},
+{n:"Pastelitos de Piña",c:"pan",d:"Pineapple-filled pastries, a reviewer favorite."},
+{n:"Quesadilla",c:"pan",d:"Sweet cheese bread — the one reviewers spot in the case and cannot resist."},
+{n:"Birthday Cake",c:"cakes",d:"Custom birthday cakes are a customer favorite. Order ahead by phone."},
+{n:"Pineapple Honey Cake",c:"cakes",d:"Rich, moist and bursting with tropical flavor — the cake regulars order again and again."},
+{n:"Tres Leches",c:"cakes",d:"Two and three leches cakes, made fresh in the shop."},
+{n:"Torta Leche",c:"cakes",d:"A milk cake reviewers call 'supa dupa good.'"},
+{n:"Santa Cake",c:"cakes",d:"A seasonal holiday cake from the cake case."},
+{n:"Picos",c:"nica",d:"The Nicaraguan picos — 'best hands down,' reviewers say. They freeze beautifully."},
+{n:"Trompudo",c:"nica",d:"A customer favorite from the Nicaraguan case."},
+{n:"Rosquillas",c:"nica",d:"Traditional Nicaraguan rings, baked fresh."},
+{n:"Sopa de Leche",c:"nica",d:"Milk-soup dessert — 'real good,' say reviewers."},
+{n:"Pioquinto",c:"nica",d:"'Try the pioquinto. It's delicious.' — a reviewer's direct advice."},
+{n:"Nacatamales",c:"nica",d:"Nicaraguan tamales — a savory specialty of the house."},
+{n:"Deditos de Queso",c:"savory",d:"Cheese-filled fingers — bread with cream cheese, warm from the oven."},
+{n:"Hard Cheese",c:"savory",d:"Hard cheese sold by the bakery, loved with the fresh bread."}
+];
+var CATNAMES={pan:"Pan Dulce",cakes:"Cakes & Tres Leches",nica:"Nicaraguan Specialties",savory:"Savory & Cheese"};
+var REVIEWS=[
+{t:"I stumbled upon Btwins Bakery by complete mistake — and now I make it a priority to stop here every time I'm in Miami… I've had their semita bread, long sugar donuts, pineapple honey cake, and strawberry sweet rolls, and every single item has blown me away…",w:"Daniel Max Ammons · Google"},
+{t:"This little gem is on the cusp of Little Havana… I was in heaven. We had pineapple honey cake, some long donuts, & these strawberry sweet rolls. Everyone loved everything. It was SO GOOD.",w:"Dee Elle · Google · January 2024"},
+{t:"I love this place, but my last visit I bought nacatamales and I was very disappointed, they were not good. In the other hand, the varieties of breads they have are amazing, every single one that I ordered was delicious! 5 stars to that.",w:"Jackie Rod · Google · May 2026"},
+{t:"Best Nicaraguan picos hands down. It's a drive for me but so worth it. Their cakes are also delicious!",w:"Andrea L. · Yelp · October 2023"},
+{t:"This is one of the best bakeries in Little Havana. The bread and cookies are always freshly made and delicious to eat with a nice cup of coffee.",w:"Amy M. · Google"},
+{t:"Best Central American bread. The bakery is always packed. The employees are very nice.",w:"Josie Sanchez · Google · July 2025"}
+];
+var filter="all", box=[], ri=0;
+function go(page){
+  document.querySelectorAll('.page').forEach(function(p){p.classList.remove('active')});
+  var el=document.getElementById('page-'+page); if(el) el.classList.add('active');
+  document.querySelectorAll('nav.mainnav button').forEach(function(b){b.classList.toggle('active',b.getAttribute('data-page')===page)});
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function setFilter(f,btn){
+  filter=f;
+  document.querySelectorAll('.chipbtn').forEach(function(b){b.classList.remove('active')});
+  if(btn) btn.classList.add('active');
+  renderItems();
+}
+function renderItems(){
+  var q=(document.getElementById('q').value||'').toLowerCase();
+  var grid=document.getElementById('itemGrid'); grid.innerHTML='';
+  var shown=0;
+  ITEMS.forEach(function(it){
+    if(filter!=='all'&&it.c!==filter) return;
+    if(q&&it.n.toLowerCase().indexOf(q)<0&&it.d.toLowerCase().indexOf(q)<0) return;
+    shown++;
+    var div=document.createElement('div'); div.className='item';
+    var inBox=box.indexOf(it.n)>=0;
+    div.innerHTML='<span class="cat">'+CATNAMES[it.c]+'</span><h3>'+it.n+'</h3><p>'+it.d+'</p><button class="add'+(inBox?' added':'')+'" onclick="toggleBox(\''+it.n.replace(/'/g,"\\'")+'\',this)">'+(inBox?'✓ In your box':'Add to box')+'</button>';
+    grid.appendChild(div);
+  });
+  if(!shown) grid.innerHTML='<p style="grid-column:1/-1;color:var(--muted)">Nothing in the case matches that — try “semitas” or “picos”, or call the bakery to ask what is baking today.</p>';
+}
+function toggleBox(name,btn){
+  var i=box.indexOf(name);
+  if(i>=0){box.splice(i,1);}else{box.push(name);}
+  document.getElementById('boxCount').textContent=box.length;
+  document.getElementById('boxItems').textContent=box.length?('Your box: '+box.join(' · ')):'Tap “Add to box” on anything you want to take home.';
+  renderItems();
+}
+function clearBox(){box=[];document.getElementById('boxCount').textContent='0';document.getElementById('boxItems').textContent='Tap “Add to box” on anything you want to take home.';renderItems();}
+function cakeSummary(){
+  var name=document.getElementById('ck-name').value||'—';
+  var phone=document.getElementById('ck-phone').value||'—';
+  var size=document.getElementById('ck-size').value;
+  var flavor=document.getElementById('ck-flavor').value;
+  var occ=document.getElementById('ck-occ').value;
+  var date=document.getElementById('ck-date').value||'to be confirmed';
+  var notes=document.getElementById('ck-notes').value||'—';
+  var s=document.getElementById('cakeSummary');
+  s.style.display='block';
+  s.innerHTML='<h3>Your cake request</h3><p><b>'+flavor+'</b> cake · '+size+' · for a <b>'+occ+'</b> · pickup <b>'+date+'</b></p><p>Name: '+name+' · Phone: '+phone+'</p><p>Notes: '+notes+'</p><p class="small">Read this out when you call (305) 649-4130 — the bakery confirms availability and price by phone. This page sends nothing anywhere.</p>';
+}
+function showReview(i){
+  ri=(i+REVIEWS.length)%REVIEWS.length;
+  document.getElementById('quoteText').textContent='“'+REVIEWS[ri].t+'”';
+  document.getElementById('quoteWho').textContent='— '+REVIEWS[ri].w;
+  var dots=document.getElementById('quoteDots'); dots.innerHTML='';
+  REVIEWS.forEach(function(r,j){
+    var d=document.createElement('span'); if(j===ri) d.className='on';
+    d.onclick=function(){showReview(j)}; dots.appendChild(d);
+  });
+}
+function nextReview(){showReview(ri+1)}
+function prevReview(){showReview(ri-1)}
+(function(){
+  var today=new Date().getDay();
+  document.querySelectorAll('#hoursTable tr').forEach(function(tr){
+    if(parseInt(tr.getAttribute('data-day'),10)===today) tr.classList.add('today');
+  });
+  renderItems();
+  showReview(0);
+})();
+</script>
+</body>
+</html>
